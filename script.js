@@ -43,3 +43,4 @@ document.getElementById("issueForm").addEventListener("submit", async (e) => {
       "❌ Error submitting issue";
   }
 });
+> Note: Firebase web configuration keys are public by design and secured via Firestore security rules.
