@@ -1,11 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Smart Campus Issue Reporter</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <h1>Smart Campus Issue Reporter</h1>
-  <p>Prototype under development for TechSprint Hackathon</p>
+
+  <form id="issueForm">
+    <input type="text" id="name" placeholder="Your Name" required><br><br>
+
+    <select id="category" required>
+      <option value="">Select Issue Category</option>
+      <option value="Cleanliness">Cleanliness</option>
+      <option value="Infrastructure">Infrastructure</option>
+      <option value="Safety">Safety</option>
+    </select><br><br>
+
+    <textarea id="description" placeholder="Describe the issue" required></textarea><br><br>
+
+    <button type="submit">Submit Issue</button>
+  </form>
+
+  <p id="message"></p>
+
+  <script src="script.js"></script>
 </body>
 </html>
-
